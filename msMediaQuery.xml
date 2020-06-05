@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <ExportFile>
   <KMW>
     <MajorVersion>4</MajorVersion>
@@ -190,6 +190,34 @@ EndEvent
       </Part>
       <Properties><Property><Name>Name</Name><Value>msMediaQueryJS</Value></Property><Property><Name>NetExtract</Name><Value>True</Value></Property><Property><Name>NetExtractFolder</Name><Value>MatiasSolucoes\msMediaQuery</Value></Property><Property><Name>NetCoreExtract</Name><Value>True</Value></Property><Property><Name>NetCoreExtractFolder</Name><Value>MatiasSolucoes\msMediaQuery</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
     </Object>
+    <Object parent="msMediaQuery" parentType="00000000-0000-0000-0000-000000000008" parentGuid="41d8f428-cd5b-4605-a0c7-1b9eb4c4a827" user="NOTEMWS\MWS" versionDate="0001-01-01T00:00:00.0000000" lastUpdate="2019-09-02T14:00:01.0000000Z" checksum="5efc45d7339124112e17e84065d0fc2c" fullyQualifiedName="msMediaQueryAPI" moduleGuid="afa47377-41d5-4ae8-9755-6f53150aa361" guid="c3849354-9f2c-4530-81ce-4658673d6a7b" name="msMediaQueryAPI" type="c163e562-42c6-4158-ad83-5b21a14cf30e" description="ms Media Query API">
+      <Part type="00000000-0000-0000-0002-000000000005">
+        <ExternalEvents>
+          <ExternalEvent>
+            <Parameters>
+              <Parameter>
+                <Properties><Property><Name>IntName</Name><Value>MediaQuery</Value></Property><Property><Name>ExoItemType</Name><Value>bas:VarChar</Value></Property><Property><Name>ExoItemLength</Name><Value>40</Value></Property></Properties>
+              </Parameter>
+            </Parameters>
+            <Properties><Property><Name>IntName</Name><Value>OnChange</Value></Property></Properties>
+          </ExternalEvent>
+        </ExternalEvents>
+        <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+      </Part>
+      <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+        <Help>
+          <HelpItem>
+            <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-English</Language>
+            <Content />
+          </HelpItem>
+        </Help>
+        <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+      </Part>
+      <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+        <Properties />
+      </Part>
+      <Properties><Property><Name>Name</Name><Value>msMediaQueryAPI</Value></Property><Property><Name>ExoNameJS</Name><Value>msMediaQuery.js</Value></Property><Property><Name>ExoReferencedFilesJS</Name><Value /></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+    </Object>
   </Objects>
   <Dependencies>
     <Reference Package="3ea7e1c6-b849-4df9-931a-070171a8a2f0" Type="Object" Id="c9584656-94b6-4ccd-890f-332d11fc2c25">
@@ -231,11 +259,14 @@ EndEvent
     <Reference Package="3ea7e1c6-b849-4df9-931a-070171a8a2f0" Type="Part" Id="9b6155f9-f286-4ed5-bd15-67672e8ea320">
       <Properties Name="Binary Content" PackageName="GenexusBL" />
     </Reference>
+    <Reference Package="3ea7e1c6-b849-4df9-931a-070171a8a2f0" Type="Object" Id="c163e562-42c6-4158-ad83-5b21a14cf30e">
+      <Properties Name="External Object" PackageName="GenexusBL" />
+    </Reference>
+    <Reference Package="3ea7e1c6-b849-4df9-931a-070171a8a2f0" Type="Part" Id="00000000-0000-0000-0002-000000000005">
+      <Properties Name="Structure" PackageName="GenexusBL" />
+    </Reference>
   </Dependencies>
   <ObjectsIdentityMapping>
-    <ObjectIdentity Type="c163e562-42c6-4158-ad83-5b21a14cf30e" Name="msMediaQueryAPI" parent="">
-      <Guid>c3849354-9f2c-4530-81ce-4658673d6a7b</Guid>
-    </ObjectIdentity>
     <ObjectIdentity Type="00000000-0000-0000-0000-000000000008" Name="msMediaQuery" parent="">
       <Guid>41d8f428-cd5b-4605-a0c7-1b9eb4c4a827</Guid>
     </ObjectIdentity>
