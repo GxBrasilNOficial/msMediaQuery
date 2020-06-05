@@ -1,0 +1,261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ExportFile>
+  <KMW>
+    <MajorVersion>4</MajorVersion>
+    <MinorVersion>0</MinorVersion>
+    <Build>140712</Build>
+  </KMW>
+  <Source kb="899c782b-20e7-4bb9-8e37-5b05eb6cff2b" username="NOTEMWS\MWS" UNCPath="\\NOTEMWS\D$\Matias\devUserControl">
+    <Version guid="c65e6933-ee85-43d1-a48f-bd4ffdb19fbc" name="devUserControl" />
+  </Source>
+  <Objects>
+    <Object parent="msMediaQuery" parentType="00000000-0000-0000-0000-000000000008" parentGuid="41d8f428-cd5b-4605-a0c7-1b9eb4c4a827" user="NOTEMWS\MWS" versionDate="0001-01-01T00:00:00.0000000" lastUpdate="2020-06-04T18:08:36.0000000Z" checksum="d83145e526da74b0cb62e996f51c66ed" fullyQualifiedName="Exemplo_msMediaQuery" moduleGuid="afa47377-41d5-4ae8-9755-6f53150aa361" guid="a8a679a7-b518-42da-960d-ad5cc9e7c325" name="Exemplo_msMediaQuery" type="c9584656-94b6-4ccd-890f-332d11fc2c25" description="Exemplo_ms Media Query">
+      <Part type="d24a58ad-57ba-41b7-9e6e-eaca3543c778">
+        <Source><![CDATA[<GxMultiForm rootId="1" version="html:15.0.0;layout:16.0.0"><Form id="1" type="layout"><detail><layout><table controlName="MainTable" tableType="Responsive" responsiveSizes="[]"><row><cell><ucw gxControlType="1688009624" PATTERN_ELEMENT_CUSTOM_PROPERTIES="&lt;Properties&gt;&lt;Property&gt;&lt;Name&gt;ControlName&lt;/Name&gt;&lt;Value&gt;msMediaQuery1&lt;/Value&gt;&lt;/Property&gt;&lt;/Properties&gt;" /></cell></row></table></layout></detail></Form></GxMultiForm>]]></Source>
+        <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+      </Part>
+      <Part type="9b0a32a3-de6d-4be1-a4dd-1b85d3741534">
+        <Source><![CDATA[]]></Source>
+        <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+      </Part>
+      <Part type="c44bd5ff-f918-415b-98e6-aca44fed84fa">
+        <Source><![CDATA[Event msMediaQueryAPI.OnChange(&MediaQuery)
+	
+	Do Case
+		
+		Case &MediaQuery = !'Extra-Small'
+			//Minha Ação		
+			
+		Case &MediaQuery = !'Small'
+			//Minha Ação
+			
+		Case &MediaQuery = !'Medium'
+			//Minha Ação
+			
+		Case &MediaQuery = !'Large'
+			//Minha Ação
+			
+	EndCase
+	
+EndEvent
+]]></Source>
+        <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+      </Part>
+      <Part type="763f0d8b-d8ac-4db4-8dd4-de8979f2b5b9">
+        <Source><![CDATA[]]></Source>
+        <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+      </Part>
+      <Part type="e4c4ade7-53f0-4a56-bdfd-843735b66f47">
+        <Variable Name="MediaQuery">
+          <Documentation />
+          <Properties><Property><Name>Name</Name><Value>MediaQuery</Value></Property><Property><Name>ATTCUSTOMTYPE</Name><Value>bas:VarChar</Value></Property></Properties>
+        </Variable>
+        <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+      </Part>
+      <Part type="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+        <Help>
+          <HelpItem>
+            <Language>88313f43-5eb2-0000-0028-e8d9f5bf9588-English</Language>
+            <Content />
+          </HelpItem>
+        </Help>
+        <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+      </Part>
+      <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+        <Properties />
+      </Part>
+      <Properties><Property><Name>Name</Name><Value>Exemplo_msMediaQuery</Value></Property><Property><Name>MasterPage</Name><Value>(none)</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+    </Object>
+    <Object parent="msMediaQuery" parentType="00000000-0000-0000-0000-000000000008" parentGuid="41d8f428-cd5b-4605-a0c7-1b9eb4c4a827" user="NOTEMWS\MWS" versionDate="0001-01-01T00:00:00.0000000" lastUpdate="2020-06-05T02:08:58.0000000Z" checksum="25bf188178ba5f894104e413aafa3f86" fullyQualifiedName="msMediaQuery" moduleGuid="afa47377-41d5-4ae8-9755-6f53150aa361" guid="697dbdd2-eae1-46bb-bd63-e725653257f1" name="msMediaQuery" type="562f4793-aabe-449f-8821-fc77e550698e" description="MS Media Query [0.1.0]">
+      <Part type="3dd92fe7-b095-44d3-9fa0-8488fa3f0c67">
+        <Source><![CDATA[<style>
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (min-width : 320px) {
+    
+		body:after {
+			content: "iPhone-Retina";
+			display: none
+		}
+
+    }
+    
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (min-width : 480px) {
+    
+    		body:after {
+			content: "Extra-Small";
+			display: none
+		}
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+    
+    		body:after {
+			content: "Small";
+			display: none
+		}
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+        
+    		body:after {
+			content: "Medium";
+			display: none
+		}
+
+    }
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (min-width : 1200px) {
+    
+    		body:after {
+			content: "Large";
+			display: none
+		}
+
+    }
+
+</style>]]></Source>
+        <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+      </Part>
+      <Part type="8e9e4a7c-a4d3-4c36-8e8e-fb6702402f63">
+        <Source><![CDATA[<Definition auto="false" >
+
+<Script Name="initialGetMediaQuery" When="AfterShow">
+
+	if (!this.IsPostBack) {
+	
+		gx.http.loadScript("MatiasSolucoes/msMediaQuery/msMediaQuery_getMediaQuery.min.js", (function () {
+						
+			$(window).on('breakpoint-change', function(e, breakpoint) {
+				
+			    if(breakpoint === 'iPhone-Retina') {
+										
+					gx.fx.obs.notify("msMediaQueryAPI.OnChange", ["iPhone-Retina"]);
+					
+			    }
+				
+			    if(breakpoint === 'Extra-Small') {
+					
+					gx.fx.obs.notify("msMediaQueryAPI.OnChange", ["Extra-Small"]);
+					
+			    }
+				
+			    if(breakpoint === 'Small') {
+					
+					gx.fx.obs.notify("msMediaQueryAPI.OnChange", ["Small"]);
+					
+			    }
+			    			    	
+				if(breakpoint === 'Medium') {
+					
+					gx.fx.obs.notify("msMediaQueryAPI.OnChange", ["Medium"]);
+					
+			    }
+			    			    
+			    if(breakpoint === 'Large') {
+					
+					gx.fx.obs.notify("msMediaQueryAPI.OnChange", ["Large"]);
+					
+			    }
+				
+			});
+			
+		}).closure(this));
+	}
+
+</Script>
+
+</Definition >]]></Source>
+        <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+      </Part>
+      <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+        <InnerHtml><![CDATA[]]></InnerHtml>
+        <Properties><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+      </Part>
+      <Properties><Property><Name>Name</Name><Value>msMediaQuery</Value></Property><Property><Name>Description</Name><Value>MS Media Query [0.1.0]</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+    </Object>
+    <Object parentGuid="00000000-0000-0000-0000-000000000000" user="NOTEMWS\MWS" versionDate="0001-01-01T00:00:00.0000000" lastUpdate="2020-06-04T17:43:09.0000000Z" checksum="2abe4d8fee3745301f97d0db5072fbfa" fullyQualifiedName="msMediaQueryJS" moduleGuid="00000000-0000-0000-0000-000000000000" guid="846c28c0-29f1-4f02-9d9e-c2b3e3d79cf1" name="msMediaQueryJS" type="1132ac08-290f-4fd1-bd18-64777b7329d1" description="ms Media Query JS">
+      <Part type="9b6155f9-f286-4ed5-bd15-67672e8ea320">
+        <Data><base64Binary>InVzZSBzdHJpY3QiO3ZhciBaNjM9ZnVuY3Rpb24oZSx0KXt2YXIgbj1mdW5jdGlvbigpe3RoaXMuYWZ0ZXJFbGVtZW50PSEhd2luZG93LmdldENvbXB1dGVkU3R5bGUmJndpbmRvdy5nZXRDb21wdXRlZFN0eWxlKGRvY3VtZW50LmJvZHksIjphZnRlciIpLHRoaXMuY3VycmVudEJyZWFrcG9pbnQ9IiIsdGhpcy5sYXN0QnJlYWtwb2ludD0iIix0aGlzLmluaXQoKX07cmV0dXJuIG4ucHJvdG90eXBlPXtpbml0OmZ1bmN0aW9uKCl7dGhpcy5hZnRlckVsZW1lbnQmJnRoaXMuX3Jlc2l6ZUxpc3RlbmVyKCl9LF9yZXNpemVMaXN0ZW5lcjpmdW5jdGlvbigpe3ZhciBlPXRoaXM7dCh3aW5kb3cpLm9uKCJyZXNpemUgb3JpZW50YXRpb25jaGFuZ2UgbG9hZCIsZnVuY3Rpb24oKXtlLmN1cnJlbnRCcmVha3BvaW50PWUuYWZ0ZXJFbGVtZW50LmdldFByb3BlcnR5VmFsdWUoImNvbnRlbnQiKS5yZXBsYWNlKC9eWyInXXxbIiddJC9nLCIiKSxlLmN1cnJlbnRCcmVha3BvaW50IT09ZS5sYXN0QnJlYWtwb2ludCYmKHQod2luZG93KS50cmlnZ2VyKCJicmVha3BvaW50LWNoYW5nZSIsZS5jdXJyZW50QnJlYWtwb2ludCksZS5sYXN0QnJlYWtwb2ludD1lLmN1cnJlbnRCcmVha3BvaW50KX0pfX0sZS5tZWRpYXF1ZXJ5TGlzdGVuZXI9ZS5tZWRpYXF1ZXJ5TGlzdGVuZXJ8fG5ldyBuLGV9KFo2M3x8e30salF1ZXJ5KTsNCg0K</base64Binary></Data>
+        <Properties><Property><Name>FileName</Name><Value>msMediaQuery_getMediaQuery.min.js</Value></Property><Property><Name>FileExtension</Name><Value>.js</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+      </Part>
+      <Part type="babf62c5-0111-49e9-a1c3-cc004d90900a">
+        <Properties />
+      </Part>
+      <Properties><Property><Name>Name</Name><Value>msMediaQueryJS</Value></Property><Property><Name>NetExtract</Name><Value>True</Value></Property><Property><Name>NetExtractFolder</Name><Value>MatiasSolucoes\msMediaQuery</Value></Property><Property><Name>NetCoreExtract</Name><Value>True</Value></Property><Property><Name>NetCoreExtractFolder</Name><Value>MatiasSolucoes\msMediaQuery</Value></Property><Property><Name>IsDefault</Name><Value>False</Value></Property></Properties>
+    </Object>
+  </Objects>
+  <Dependencies>
+    <Reference Package="3ea7e1c6-b849-4df9-931a-070171a8a2f0" Type="Object" Id="c9584656-94b6-4ccd-890f-332d11fc2c25">
+      <Properties Name="Web Panel" PackageName="GenexusBL" />
+    </Reference>
+    <Reference Package="3ea7e1c6-b849-4df9-931a-070171a8a2f0" Type="Part" Id="d24a58ad-57ba-41b7-9e6e-eaca3543c778">
+      <Properties Name="Web Form" PackageName="GenexusBL" />
+    </Reference>
+    <Reference Package="3ea7e1c6-b849-4df9-931a-070171a8a2f0" Type="Part" Id="9b0a32a3-de6d-4be1-a4dd-1b85d3741534">
+      <Properties Name="Rules" PackageName="GenexusBL" />
+    </Reference>
+    <Reference Package="3ea7e1c6-b849-4df9-931a-070171a8a2f0" Type="Part" Id="c44bd5ff-f918-415b-98e6-aca44fed84fa">
+      <Properties Name="Events" PackageName="GenexusBL" />
+    </Reference>
+    <Reference Package="3ea7e1c6-b849-4df9-931a-070171a8a2f0" Type="Part" Id="763f0d8b-d8ac-4db4-8dd4-de8979f2b5b9">
+      <Properties Name="Conditions" PackageName="GenexusBL" />
+    </Reference>
+    <Reference Package="3ea7e1c6-b849-4df9-931a-070171a8a2f0" Type="Part" Id="e4c4ade7-53f0-4a56-bdfd-843735b66f47">
+      <Properties Name="Variables" PackageName="GenexusBL" />
+    </Reference>
+    <Reference Package="3ea7e1c6-b849-4df9-931a-070171a8a2f0" Type="Part" Id="ad3ca970-19d0-44e1-a7b7-db05556e820c">
+      <Properties Name="Help" PackageName="GenexusBL" />
+    </Reference>
+    <Reference Package="3ea7e1c6-b849-4df9-931a-070171a8a2f0" Type="Part" Id="babf62c5-0111-49e9-a1c3-cc004d90900a">
+      <Properties Name="Documentation" PackageName="GenexusBL" />
+    </Reference>
+    <Reference Package="3ea7e1c6-b849-4df9-931a-070171a8a2f0" Type="Object" Id="562f4793-aabe-449f-8821-fc77e550698e">
+      <Properties Name="User Control" PackageName="GenexusBL" />
+    </Reference>
+    <Reference Package="3ea7e1c6-b849-4df9-931a-070171a8a2f0" Type="Part" Id="3dd92fe7-b095-44d3-9fa0-8488fa3f0c67">
+      <Properties Name="Screen Template" PackageName="GenexusBL" />
+    </Reference>
+    <Reference Package="3ea7e1c6-b849-4df9-931a-070171a8a2f0" Type="Part" Id="8e9e4a7c-a4d3-4c36-8e8e-fb6702402f63">
+      <Properties Name="Properties" PackageName="GenexusBL" />
+    </Reference>
+    <Reference Package="3ea7e1c6-b849-4df9-931a-070171a8a2f0" Type="Object" Id="1132ac08-290f-4fd1-bd18-64777b7329d1">
+      <Properties Name="File" PackageName="GenexusBL" />
+    </Reference>
+    <Reference Package="3ea7e1c6-b849-4df9-931a-070171a8a2f0" Type="Part" Id="9b6155f9-f286-4ed5-bd15-67672e8ea320">
+      <Properties Name="Binary Content" PackageName="GenexusBL" />
+    </Reference>
+  </Dependencies>
+  <ObjectsIdentityMapping>
+    <ObjectIdentity Type="c163e562-42c6-4158-ad83-5b21a14cf30e" Name="msMediaQueryAPI" parent="">
+      <Guid>c3849354-9f2c-4530-81ce-4658673d6a7b</Guid>
+    </ObjectIdentity>
+    <ObjectIdentity Type="00000000-0000-0000-0000-000000000008" Name="msMediaQuery" parent="">
+      <Guid>41d8f428-cd5b-4605-a0c7-1b9eb4c4a827</Guid>
+    </ObjectIdentity>
+    <ObjectIdentity Type="00000000-0000-0000-0000-000000000008" Name="UserControl_Oficiais" parent="">
+      <Guid>19beb794-7554-4807-b8d8-000b149603e2</Guid>
+    </ObjectIdentity>
+    <ObjectIdentity Type="c804fdbd-7c0b-440d-8527-4316c92649a6" Name="Carmine" parent="">
+      <Guid>c3d9279b-69fb-4f4a-920e-62a13a536d87</Guid>
+    </ObjectIdentity>
+    <ObjectIdentity Type="ecececec-dfe0-4a57-ae8f-c6e31b0dcbc0" Name="Default" parent="">
+      <Guid>1e31af77-396d-4ffa-b903-308facded23f</Guid>
+    </ObjectIdentity>
+    <ObjectIdentity Type="d4876646-98dd-419b-8c1c-896f83c48368" Name="Form" parent="">
+      <Guid>d5ef9926-a55b-5eb1-ac93-2211cfeeb656</Guid>
+    </ObjectIdentity>
+    <ObjectIdentity Type="d4876646-98dd-419b-8c1c-896f83c48368" Name="Attribute" parent="">
+      <Guid>7f83da99-bc71-5230-bf17-0352ce27c129</Guid>
+    </ObjectIdentity>
+    <ObjectIdentity Type="d4876646-98dd-419b-8c1c-896f83c48368" Name="Table" parent="">
+      <Guid>784008a4-3c1e-563a-9723-453ef4d698c9</Guid>
+    </ObjectIdentity>
+  </ObjectsIdentityMapping>
+</ExportFile>
